@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colorful Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <img src="images/logo.png" alt="Logo" class="logo-img" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="menu-toggle">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <div class="container">
+        <h2>Your Journey Starts Here</h2>
+        <p>Explore a world of possibilities with our simple, colorful landing page.</p>
+        <a href="#" class="cta-button">Explore Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 MyBrand. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      toggle.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
