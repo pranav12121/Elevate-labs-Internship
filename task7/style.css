@@ -1,0 +1,88 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-weight: 300;
+     font-style: bold;
+     font-weight: 800;
+}
+
+header p {
+    color: #555;
+    font-size:  1.2em;
+    font-style: bold;
+    font-weight: 500;
+}
+
+button {
+    padding: 12px 25px;
+    background: #4d51b6; /* Soft Teal */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #ed4d4d; /* Darker Teal */
+    transform: translateY(-2px);
+}
+
+#user-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.user-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-left: 5px solid #4db6ac; /* Accent Border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.user-card h2 {
+    margin-top: 0;
+    color: #2c3e50;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.user-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.user-card p strong {
+    color: #333;
+}
+
+p[style*="color:red;"] {
+    font-size: 1.2em;
+    font-weight: bold;
+}
