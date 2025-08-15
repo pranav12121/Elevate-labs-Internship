@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Blog</title>
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS for enhanced styling -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa; /* Light gray background */
+        }
+
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x400/343a40/ffffff') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+            background-image: url(https://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-7-full.jpg);
+        }
+
+        .hero-section h1 {
+            font-weight: 700;
+        }
+
+        .blog-card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            border: none;
+            border-radius: 15px; /* More rounded corners */
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,.15);
+        }
+
+        .card-img-top {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .btn-primary {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .btn-primary:hover {
+            background-color: #0b5ed7;
+            border-color: #0a58ca;
+        }
+
+        .sidebar-widget {
+            background-color: #ffabab;
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 20px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 2rem 0;
+        }
+        
+        .footer a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #ffffff;
+        }
+        .sidebar-widget-subscribe{
+            background-color: #522f58;
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 20px 20px rgba(0, 0, 0, 0.05);
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">TechBlog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section mb-5">
+        <div class="container">
+            <h1 class="display-4">Insights on Modern Technology</h1>
+            <p class="lead">Your daily dose of tech news, tutorials, and reviews.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="row">
+            <!-- Blog Posts Column -->
+            <div class="col-lg-8">
+                <h2 class="mb-4 fw-bold">Latest Posts</h2>
+                
+                <!-- Blog Post 1 -->
+                <div class="card shadow-sm mb-4 blog-card">
+                    <img src="https://aisecretsexposed.com/wp-content/uploads/2024/04/how-smart-will-ai-be-in-2050-ZWUbZ76yRUk.jpg" class="card-img-top" alt="AI" onerror="this.onerror=null;this.src='https://placehold.co/800x400/6c757d/ffffff?text=Image+Not+Found';">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">The Future of Artificial Intelligence</h5>
+                        <p class="card-text text-muted">Published on Aug 15, 2025</p>
+                        <p class="card-text">AI is transforming industries at an unprecedented pace. From healthcare to finance, discover how machine learning and neural networks are shaping our world.</p>
+                        <a href="#" class="btn btn-primary">Read More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="card shadow-sm mb-4 blog-card">
+                    <img src="https://www.inf.usi.ch/sites/inf.usi.ch/files/styles/usi_xsmall/public/storage/images/document/3952aeff7ec947cfdacc6037035a4ac6.jpg?itok=nMS5Q17f" class="card-img-top" alt="Web 3.0" onerror="this.onerror=null;this.src='https://placehold.co/800x400/0dcaf0/ffffff?text=Image+Not+Found';">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">A Beginner's Guide to Web 3.0</h5>
+                        <p class="card-text text-muted">Published on Aug 12, 2025</p>
+                        <p class="card-text">Blockchain, decentralization, and NFTs are more than just buzzwords. This guide breaks down the core concepts of the next evolution of the internet.</p>
+                        <a href="#" class="btn btn-primary">Read More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                 <div class="card shadow-sm mb-4 blog-card">
+                    <img src="https://euro-systems.co.uk/wp-content/uploads/2024/09/Cloud-Computing-History-1.png" class="card-img-top" alt="Cloud" onerror="this.onerror=null;this.src='https://placehold.co/800x400/ffc107/ffffff?text=Image+Not+Found';">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Mastering Cloud-Native Development</h5>
+                        <p class="card-text text-muted">Published on Aug 10, 2025</p>
+                        <p class="card-text">Learn about the best practices for building and deploying applications in the cloud, focusing on scalability, resilience, and cost-efficiency.</p>
+                        <a href="#" class="btn btn-primary">Read More &rarr;</a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Sidebar Column -->
+            <div class="col-lg-4">
+                <!-- About Widget -->
+                <div class="sidebar-widget mb-4">
+                    <h5 class="fw-bold mb-3">About Us</h5>
+                    <p>We are a team of tech enthusiasts dedicated to sharing our knowledge and passion with the world. Follow us for the latest trends and deep dives into technology.</p>
+                </div>
+
+                <!-- Categories Widget -->
+                <div class="sidebar-widget mb-4">
+                    <h5 class="fw-bold mb-3">Categories</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-dark">Artificial Intelligence</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Web Development</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Cloud Computing</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Cybersecurity</a></li>
+                        <li><a href="#" class="text-decoration-none text-dark">Product Reviews</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Subscribe Widget -->
+                <div class="sidebar-widget-subscribe">
+                    <h5 class="fw-bold mb-3">Subscribe</h5>
+                    <p>Get the latest posts delivered right to your inbox.</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container text-center">
+            <p>&copy; 2025 TechBlog. All Rights Reserved.</p>
+            <p>
+                <a href="#">Privacy Policy</a> &middot; <a href="#">Terms of Use</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
